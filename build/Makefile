@@ -181,6 +181,32 @@ mutexes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/build
 .PHONY : mutexes/fast
 
+#=============================================================================
+# Target rules for targets named trylockmutex
+
+# Build rule for target.
+trylockmutex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trylockmutex
+.PHONY : trylockmutex
+
+# fast build rule for target.
+trylockmutex/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/build
+.PHONY : trylockmutex/fast
+
+#=============================================================================
+# Target rules for targets named trylocking_multiple_mutexes
+
+# Build rule for target.
+trylocking_multiple_mutexes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trylocking_multiple_mutexes
+.PHONY : trylocking_multiple_mutexes
+
+# fast build rule for target.
+trylocking_multiple_mutexes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/build
+.PHONY : trylocking_multiple_mutexes/fast
+
 src/join_detach_and_joinable.o: src/join_detach_and_joinable.cpp.o
 .PHONY : src/join_detach_and_joinable.o
 
@@ -277,6 +303,54 @@ src/single_thread_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_thread_demo.dir/build.make CMakeFiles/single_thread_demo.dir/src/single_thread_demo.cpp.s
 .PHONY : src/single_thread_demo.cpp.s
 
+src/trylocking_multiple_mutexes.o: src/trylocking_multiple_mutexes.cpp.o
+.PHONY : src/trylocking_multiple_mutexes.o
+
+# target to build an object file
+src/trylocking_multiple_mutexes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/src/trylocking_multiple_mutexes.cpp.o
+.PHONY : src/trylocking_multiple_mutexes.cpp.o
+
+src/trylocking_multiple_mutexes.i: src/trylocking_multiple_mutexes.cpp.i
+.PHONY : src/trylocking_multiple_mutexes.i
+
+# target to preprocess a source file
+src/trylocking_multiple_mutexes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/src/trylocking_multiple_mutexes.cpp.i
+.PHONY : src/trylocking_multiple_mutexes.cpp.i
+
+src/trylocking_multiple_mutexes.s: src/trylocking_multiple_mutexes.cpp.s
+.PHONY : src/trylocking_multiple_mutexes.s
+
+# target to generate assembly for a file
+src/trylocking_multiple_mutexes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/src/trylocking_multiple_mutexes.cpp.s
+.PHONY : src/trylocking_multiple_mutexes.cpp.s
+
+src/trylockmutex.o: src/trylockmutex.cpp.o
+.PHONY : src/trylockmutex.o
+
+# target to build an object file
+src/trylockmutex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/src/trylockmutex.cpp.o
+.PHONY : src/trylockmutex.cpp.o
+
+src/trylockmutex.i: src/trylockmutex.cpp.i
+.PHONY : src/trylockmutex.i
+
+# target to preprocess a source file
+src/trylockmutex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/src/trylockmutex.cpp.i
+.PHONY : src/trylockmutex.cpp.i
+
+src/trylockmutex.s: src/trylockmutex.cpp.s
+.PHONY : src/trylockmutex.s
+
+# target to generate assembly for a file
+src/trylockmutex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/src/trylockmutex.cpp.s
+.PHONY : src/trylockmutex.cpp.s
+
 src/ways_to_create_threads.o: src/ways_to_create_threads.cpp.o
 .PHONY : src/ways_to_create_threads.o
 
@@ -313,6 +387,8 @@ help:
 	@echo "... multiple_threads_demo"
 	@echo "... mutexes"
 	@echo "... single_thread_demo"
+	@echo "... trylocking_multiple_mutexes"
+	@echo "... trylockmutex"
 	@echo "... ways_to_create_threads"
 	@echo "... src/join_detach_and_joinable.o"
 	@echo "... src/join_detach_and_joinable.i"
@@ -326,6 +402,12 @@ help:
 	@echo "... src/single_thread_demo.o"
 	@echo "... src/single_thread_demo.i"
 	@echo "... src/single_thread_demo.s"
+	@echo "... src/trylocking_multiple_mutexes.o"
+	@echo "... src/trylocking_multiple_mutexes.i"
+	@echo "... src/trylocking_multiple_mutexes.s"
+	@echo "... src/trylockmutex.o"
+	@echo "... src/trylockmutex.i"
+	@echo "... src/trylockmutex.s"
 	@echo "... src/ways_to_create_threads.o"
 	@echo "... src/ways_to_create_threads.i"
 	@echo "... src/ways_to_create_threads.s"

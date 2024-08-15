@@ -44,4 +44,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ways_to_create_threads.dir/DependInfo.cmake"
   "CMakeFiles/join_detach_and_joinable.dir/DependInfo.cmake"
   "CMakeFiles/mutexes.dir/DependInfo.cmake"
+  "CMakeFiles/trylockmutex.dir/DependInfo.cmake"
+  "CMakeFiles/trylocking_multiple_mutexes.dir/DependInfo.cmake"
   )

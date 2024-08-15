@@ -25,5 +25,7 @@ ADD_EXECUTABLE(join_detach_and_joinable ${SOURCES}/join_detach_and_joinable.cpp)
 
 ADD_EXECUTABLE(mutexes ${SOURCES}/mutexes.cpp)
 
+ADD_EXECUTABLE(trylockmutex ${SOURCES}/trylockmutex.cpp)
 
+ADD_EXECUTABLE(trylocking_multiple_mutexes ${SOURCES}/trylocking_multiple_mutexes.cpp)
 
