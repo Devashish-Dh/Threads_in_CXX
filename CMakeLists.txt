@@ -1,0 +1,29 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+
+PROJECT(Threads_in_CXX
+        VERSION 1.0
+        DESCRIPTION "Description" 
+        LANGUAGES CXX       
+)
+
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include) # for header files if any
+SET(SOURCES ${CMAKE_SOURCE_DIR}/src)# source files of the project
+
+
+
+
+
+
+
+ADD_EXECUTABLE(single_thread_demo ${SOURCES}/single_thread_demo.cpp)
+
+ADD_EXECUTABLE(multiple_threads_demo ${SOURCES}/multiple_threads_demo.cpp)
+
+ADD_EXECUTABLE(ways_to_create_threads ${SOURCES}/ways_to_create_threads.cpp)
+
+ADD_EXECUTABLE(join_detach_and_joinable ${SOURCES}/join_detach_and_joinable.cpp)
+
+
+
+
+

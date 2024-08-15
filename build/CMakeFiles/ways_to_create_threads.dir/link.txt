@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ways_to_create_threads.dir/src/ways_to_create_threads.cpp.o -o ways_to_create_threads 
