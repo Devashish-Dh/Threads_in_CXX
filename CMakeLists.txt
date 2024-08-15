@@ -29,3 +29,20 @@ ADD_EXECUTABLE(trylockmutex ${SOURCES}/trylockmutex.cpp)
 
 ADD_EXECUTABLE(trylocking_multiple_mutexes ${SOURCES}/trylocking_multiple_mutexes.cpp)
 
+ADD_EXECUTABLE(timed_mutex_lock ${SOURCES}/timed_mutex_lock.cpp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADD_EXECUTABLE(trylocking_multiple_mutexes ${SOURCES}/trylocking_multiple_mutexes.cpp)
+
