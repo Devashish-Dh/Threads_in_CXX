@@ -23,7 +23,7 @@ ADD_EXECUTABLE(ways_to_create_threads ${SOURCES}/ways_to_create_threads.cpp)
 
 ADD_EXECUTABLE(join_detach_and_joinable ${SOURCES}/join_detach_and_joinable.cpp)
 
-
+ADD_EXECUTABLE(mutexes ${SOURCES}/mutexes.cpp)
 
 
 

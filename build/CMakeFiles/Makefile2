@@ -67,6 +67,7 @@ all: CMakeFiles/single_thread_demo.dir/all
 all: CMakeFiles/multiple_threads_demo.dir/all
 all: CMakeFiles/ways_to_create_threads.dir/all
 all: CMakeFiles/join_detach_and_joinable.dir/all
+all: CMakeFiles/mutexes.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/single_thread_demo.dir/clean
 clean: CMakeFiles/multiple_threads_demo.dir/clean
 clean: CMakeFiles/ways_to_create_threads.dir/clean
 clean: CMakeFiles/join_detach_and_joinable.dir/clean
+clean: CMakeFiles/mutexes.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -87,7 +89,7 @@ clean: CMakeFiles/join_detach_and_joinable.dir/clean
 CMakeFiles/single_thread_demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_thread_demo.dir/build.make CMakeFiles/single_thread_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_thread_demo.dir/build.make CMakeFiles/single_thread_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=5,6 "Built target single_thread_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=7,8 "Built target single_thread_demo"
 .PHONY : CMakeFiles/single_thread_demo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -139,7 +141,7 @@ CMakeFiles/multiple_threads_demo.dir/clean:
 CMakeFiles/ways_to_create_threads.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ways_to_create_threads.dir/build.make CMakeFiles/ways_to_create_threads.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ways_to_create_threads.dir/build.make CMakeFiles/ways_to_create_threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=7,8 "Built target ways_to_create_threads"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=9,10 "Built target ways_to_create_threads"
 .PHONY : CMakeFiles/ways_to_create_threads.dir/all
 
 # Build rule for subdir invocation for target.
@@ -183,6 +185,32 @@ join_detach_and_joinable: CMakeFiles/join_detach_and_joinable.dir/rule
 CMakeFiles/join_detach_and_joinable.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_detach_and_joinable.dir/build.make CMakeFiles/join_detach_and_joinable.dir/clean
 .PHONY : CMakeFiles/join_detach_and_joinable.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mutexes.dir
+
+# All Build rule for target.
+CMakeFiles/mutexes.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=5,6 "Built target mutexes"
+.PHONY : CMakeFiles/mutexes.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mutexes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mutexes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 0
+.PHONY : CMakeFiles/mutexes.dir/rule
+
+# Convenience name for target.
+mutexes: CMakeFiles/mutexes.dir/rule
+.PHONY : mutexes
+
+# clean rule for target.
+CMakeFiles/mutexes.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/clean
+.PHONY : CMakeFiles/mutexes.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

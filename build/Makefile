@@ -168,6 +168,19 @@ join_detach_and_joinable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_detach_and_joinable.dir/build.make CMakeFiles/join_detach_and_joinable.dir/build
 .PHONY : join_detach_and_joinable/fast
 
+#=============================================================================
+# Target rules for targets named mutexes
+
+# Build rule for target.
+mutexes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mutexes
+.PHONY : mutexes
+
+# fast build rule for target.
+mutexes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/build
+.PHONY : mutexes/fast
+
 src/join_detach_and_joinable.o: src/join_detach_and_joinable.cpp.o
 .PHONY : src/join_detach_and_joinable.o
 
@@ -215,6 +228,30 @@ src/multiple_threads_demo.s: src/multiple_threads_demo.cpp.s
 src/multiple_threads_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/multiple_threads_demo.dir/build.make CMakeFiles/multiple_threads_demo.dir/src/multiple_threads_demo.cpp.s
 .PHONY : src/multiple_threads_demo.cpp.s
+
+src/mutexes.o: src/mutexes.cpp.o
+.PHONY : src/mutexes.o
+
+# target to build an object file
+src/mutexes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/src/mutexes.cpp.o
+.PHONY : src/mutexes.cpp.o
+
+src/mutexes.i: src/mutexes.cpp.i
+.PHONY : src/mutexes.i
+
+# target to preprocess a source file
+src/mutexes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/src/mutexes.cpp.i
+.PHONY : src/mutexes.cpp.i
+
+src/mutexes.s: src/mutexes.cpp.s
+.PHONY : src/mutexes.s
+
+# target to generate assembly for a file
+src/mutexes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/src/mutexes.cpp.s
+.PHONY : src/mutexes.cpp.s
 
 src/single_thread_demo.o: src/single_thread_demo.cpp.o
 .PHONY : src/single_thread_demo.o
@@ -274,6 +311,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... join_detach_and_joinable"
 	@echo "... multiple_threads_demo"
+	@echo "... mutexes"
 	@echo "... single_thread_demo"
 	@echo "... ways_to_create_threads"
 	@echo "... src/join_detach_and_joinable.o"
@@ -282,6 +320,9 @@ help:
 	@echo "... src/multiple_threads_demo.o"
 	@echo "... src/multiple_threads_demo.i"
 	@echo "... src/multiple_threads_demo.s"
+	@echo "... src/mutexes.o"
+	@echo "... src/mutexes.i"
+	@echo "... src/mutexes.s"
 	@echo "... src/single_thread_demo.o"
 	@echo "... src/single_thread_demo.i"
 	@echo "... src/single_thread_demo.s"

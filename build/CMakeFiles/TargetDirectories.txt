@@ -2,5 +2,6 @@
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/multiple_threads_demo.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/ways_to_create_threads.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/join_detach_and_joinable.dir
+/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/mutexes.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/edit_cache.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/rebuild_cache.dir
