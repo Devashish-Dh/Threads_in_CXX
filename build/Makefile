@@ -220,6 +220,45 @@ timed_mutex_lock/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/build
 .PHONY : timed_mutex_lock/fast
 
+#=============================================================================
+# Target rules for targets named recursive_mutex
+
+# Build rule for target.
+recursive_mutex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recursive_mutex
+.PHONY : recursive_mutex
+
+# fast build rule for target.
+recursive_mutex/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/build
+.PHONY : recursive_mutex/fast
+
+#=============================================================================
+# Target rules for targets named lock_guards
+
+# Build rule for target.
+lock_guards: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lock_guards
+.PHONY : lock_guards
+
+# fast build rule for target.
+lock_guards/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/build
+.PHONY : lock_guards/fast
+
+#=============================================================================
+# Target rules for targets named unique_lock
+
+# Build rule for target.
+unique_lock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unique_lock
+.PHONY : unique_lock
+
+# fast build rule for target.
+unique_lock/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/build
+.PHONY : unique_lock/fast
+
 src/join_detach_and_joinable.o: src/join_detach_and_joinable.cpp.o
 .PHONY : src/join_detach_and_joinable.o
 
@@ -243,6 +282,30 @@ src/join_detach_and_joinable.s: src/join_detach_and_joinable.cpp.s
 src/join_detach_and_joinable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_detach_and_joinable.dir/build.make CMakeFiles/join_detach_and_joinable.dir/src/join_detach_and_joinable.cpp.s
 .PHONY : src/join_detach_and_joinable.cpp.s
+
+src/lock_guards.o: src/lock_guards.cpp.o
+.PHONY : src/lock_guards.o
+
+# target to build an object file
+src/lock_guards.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/src/lock_guards.cpp.o
+.PHONY : src/lock_guards.cpp.o
+
+src/lock_guards.i: src/lock_guards.cpp.i
+.PHONY : src/lock_guards.i
+
+# target to preprocess a source file
+src/lock_guards.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/src/lock_guards.cpp.i
+.PHONY : src/lock_guards.cpp.i
+
+src/lock_guards.s: src/lock_guards.cpp.s
+.PHONY : src/lock_guards.s
+
+# target to generate assembly for a file
+src/lock_guards.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/src/lock_guards.cpp.s
+.PHONY : src/lock_guards.cpp.s
 
 src/multiple_threads_demo.o: src/multiple_threads_demo.cpp.o
 .PHONY : src/multiple_threads_demo.o
@@ -291,6 +354,30 @@ src/mutexes.s: src/mutexes.cpp.s
 src/mutexes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/src/mutexes.cpp.s
 .PHONY : src/mutexes.cpp.s
+
+src/recursive_mutex.o: src/recursive_mutex.cpp.o
+.PHONY : src/recursive_mutex.o
+
+# target to build an object file
+src/recursive_mutex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/src/recursive_mutex.cpp.o
+.PHONY : src/recursive_mutex.cpp.o
+
+src/recursive_mutex.i: src/recursive_mutex.cpp.i
+.PHONY : src/recursive_mutex.i
+
+# target to preprocess a source file
+src/recursive_mutex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/src/recursive_mutex.cpp.i
+.PHONY : src/recursive_mutex.cpp.i
+
+src/recursive_mutex.s: src/recursive_mutex.cpp.s
+.PHONY : src/recursive_mutex.s
+
+# target to generate assembly for a file
+src/recursive_mutex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/src/recursive_mutex.cpp.s
+.PHONY : src/recursive_mutex.cpp.s
 
 src/single_thread_demo.o: src/single_thread_demo.cpp.o
 .PHONY : src/single_thread_demo.o
@@ -388,6 +475,30 @@ src/trylockmutex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/src/trylockmutex.cpp.s
 .PHONY : src/trylockmutex.cpp.s
 
+src/unique_lock.o: src/unique_lock.cpp.o
+.PHONY : src/unique_lock.o
+
+# target to build an object file
+src/unique_lock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/src/unique_lock.cpp.o
+.PHONY : src/unique_lock.cpp.o
+
+src/unique_lock.i: src/unique_lock.cpp.i
+.PHONY : src/unique_lock.i
+
+# target to preprocess a source file
+src/unique_lock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/src/unique_lock.cpp.i
+.PHONY : src/unique_lock.cpp.i
+
+src/unique_lock.s: src/unique_lock.cpp.s
+.PHONY : src/unique_lock.s
+
+# target to generate assembly for a file
+src/unique_lock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/src/unique_lock.cpp.s
+.PHONY : src/unique_lock.cpp.s
+
 src/ways_to_create_threads.o: src/ways_to_create_threads.cpp.o
 .PHONY : src/ways_to_create_threads.o
 
@@ -421,22 +532,31 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... join_detach_and_joinable"
+	@echo "... lock_guards"
 	@echo "... multiple_threads_demo"
 	@echo "... mutexes"
+	@echo "... recursive_mutex"
 	@echo "... single_thread_demo"
 	@echo "... timed_mutex_lock"
 	@echo "... trylocking_multiple_mutexes"
 	@echo "... trylockmutex"
+	@echo "... unique_lock"
 	@echo "... ways_to_create_threads"
 	@echo "... src/join_detach_and_joinable.o"
 	@echo "... src/join_detach_and_joinable.i"
 	@echo "... src/join_detach_and_joinable.s"
+	@echo "... src/lock_guards.o"
+	@echo "... src/lock_guards.i"
+	@echo "... src/lock_guards.s"
 	@echo "... src/multiple_threads_demo.o"
 	@echo "... src/multiple_threads_demo.i"
 	@echo "... src/multiple_threads_demo.s"
 	@echo "... src/mutexes.o"
 	@echo "... src/mutexes.i"
 	@echo "... src/mutexes.s"
+	@echo "... src/recursive_mutex.o"
+	@echo "... src/recursive_mutex.i"
+	@echo "... src/recursive_mutex.s"
 	@echo "... src/single_thread_demo.o"
 	@echo "... src/single_thread_demo.i"
 	@echo "... src/single_thread_demo.s"
@@ -449,6 +569,9 @@ help:
 	@echo "... src/trylockmutex.o"
 	@echo "... src/trylockmutex.i"
 	@echo "... src/trylockmutex.s"
+	@echo "... src/unique_lock.o"
+	@echo "... src/unique_lock.i"
+	@echo "... src/unique_lock.s"
 	@echo "... src/ways_to_create_threads.o"
 	@echo "... src/ways_to_create_threads.i"
 	@echo "... src/ways_to_create_threads.s"

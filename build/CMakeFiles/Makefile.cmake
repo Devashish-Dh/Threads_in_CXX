@@ -47,4 +47,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/trylockmutex.dir/DependInfo.cmake"
   "CMakeFiles/trylocking_multiple_mutexes.dir/DependInfo.cmake"
   "CMakeFiles/timed_mutex_lock.dir/DependInfo.cmake"
+  "CMakeFiles/recursive_mutex.dir/DependInfo.cmake"
+  "CMakeFiles/lock_guards.dir/DependInfo.cmake"
+  "CMakeFiles/unique_lock.dir/DependInfo.cmake"
   )

@@ -71,6 +71,9 @@ all: CMakeFiles/mutexes.dir/all
 all: CMakeFiles/trylockmutex.dir/all
 all: CMakeFiles/trylocking_multiple_mutexes.dir/all
 all: CMakeFiles/timed_mutex_lock.dir/all
+all: CMakeFiles/recursive_mutex.dir/all
+all: CMakeFiles/lock_guards.dir/all
+all: CMakeFiles/unique_lock.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -86,6 +89,9 @@ clean: CMakeFiles/mutexes.dir/clean
 clean: CMakeFiles/trylockmutex.dir/clean
 clean: CMakeFiles/trylocking_multiple_mutexes.dir/clean
 clean: CMakeFiles/timed_mutex_lock.dir/clean
+clean: CMakeFiles/recursive_mutex.dir/clean
+clean: CMakeFiles/lock_guards.dir/clean
+clean: CMakeFiles/unique_lock.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -95,7 +101,7 @@ clean: CMakeFiles/timed_mutex_lock.dir/clean
 CMakeFiles/single_thread_demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_thread_demo.dir/build.make CMakeFiles/single_thread_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_thread_demo.dir/build.make CMakeFiles/single_thread_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=7,8 "Built target single_thread_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=11,12 "Built target single_thread_demo"
 .PHONY : CMakeFiles/single_thread_demo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -121,7 +127,7 @@ CMakeFiles/single_thread_demo.dir/clean:
 CMakeFiles/multiple_threads_demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/multiple_threads_demo.dir/build.make CMakeFiles/multiple_threads_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/multiple_threads_demo.dir/build.make CMakeFiles/multiple_threads_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=3,4 "Built target multiple_threads_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=5,6 "Built target multiple_threads_demo"
 .PHONY : CMakeFiles/multiple_threads_demo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -147,7 +153,7 @@ CMakeFiles/multiple_threads_demo.dir/clean:
 CMakeFiles/ways_to_create_threads.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ways_to_create_threads.dir/build.make CMakeFiles/ways_to_create_threads.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ways_to_create_threads.dir/build.make CMakeFiles/ways_to_create_threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=15,16 "Built target ways_to_create_threads"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=21,22 "Built target ways_to_create_threads"
 .PHONY : CMakeFiles/ways_to_create_threads.dir/all
 
 # Build rule for subdir invocation for target.
@@ -199,7 +205,7 @@ CMakeFiles/join_detach_and_joinable.dir/clean:
 CMakeFiles/mutexes.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mutexes.dir/build.make CMakeFiles/mutexes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=5,6 "Built target mutexes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=7,8 "Built target mutexes"
 .PHONY : CMakeFiles/mutexes.dir/all
 
 # Build rule for subdir invocation for target.
@@ -225,7 +231,7 @@ CMakeFiles/mutexes.dir/clean:
 CMakeFiles/trylockmutex.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylockmutex.dir/build.make CMakeFiles/trylockmutex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=13,14 "Built target trylockmutex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=17,18 "Built target trylockmutex"
 .PHONY : CMakeFiles/trylockmutex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -251,7 +257,7 @@ CMakeFiles/trylockmutex.dir/clean:
 CMakeFiles/trylocking_multiple_mutexes.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=11,12 "Built target trylocking_multiple_mutexes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=15,16 "Built target trylocking_multiple_mutexes"
 .PHONY : CMakeFiles/trylocking_multiple_mutexes.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +283,7 @@ CMakeFiles/trylocking_multiple_mutexes.dir/clean:
 CMakeFiles/timed_mutex_lock.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=9,10 "Built target timed_mutex_lock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=13,14 "Built target timed_mutex_lock"
 .PHONY : CMakeFiles/timed_mutex_lock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -295,6 +301,84 @@ timed_mutex_lock: CMakeFiles/timed_mutex_lock.dir/rule
 CMakeFiles/timed_mutex_lock.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/clean
 .PHONY : CMakeFiles/timed_mutex_lock.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/recursive_mutex.dir
+
+# All Build rule for target.
+CMakeFiles/recursive_mutex.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=9,10 "Built target recursive_mutex"
+.PHONY : CMakeFiles/recursive_mutex.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/recursive_mutex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/recursive_mutex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 0
+.PHONY : CMakeFiles/recursive_mutex.dir/rule
+
+# Convenience name for target.
+recursive_mutex: CMakeFiles/recursive_mutex.dir/rule
+.PHONY : recursive_mutex
+
+# clean rule for target.
+CMakeFiles/recursive_mutex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex.dir/build.make CMakeFiles/recursive_mutex.dir/clean
+.PHONY : CMakeFiles/recursive_mutex.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lock_guards.dir
+
+# All Build rule for target.
+CMakeFiles/lock_guards.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=3,4 "Built target lock_guards"
+.PHONY : CMakeFiles/lock_guards.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lock_guards.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lock_guards.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 0
+.PHONY : CMakeFiles/lock_guards.dir/rule
+
+# Convenience name for target.
+lock_guards: CMakeFiles/lock_guards.dir/rule
+.PHONY : lock_guards
+
+# clean rule for target.
+CMakeFiles/lock_guards.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/clean
+.PHONY : CMakeFiles/lock_guards.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/unique_lock.dir
+
+# All Build rule for target.
+CMakeFiles/unique_lock.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles --progress-num=19,20 "Built target unique_lock"
+.PHONY : CMakeFiles/unique_lock.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/unique_lock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/unique_lock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles 0
+.PHONY : CMakeFiles/unique_lock.dir/rule
+
+# Convenience name for target.
+unique_lock: CMakeFiles/unique_lock.dir/rule
+.PHONY : unique_lock
+
+# clean rule for target.
+CMakeFiles/unique_lock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/clean
+.PHONY : CMakeFiles/unique_lock.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -33,11 +33,11 @@ ADD_EXECUTABLE(timed_mutex_lock ${SOURCES}/timed_mutex_lock.cpp)
 
 ADD_EXECUTABLE(recursive_mutex ${SOURCES}/recursive_mutex.cpp)
 
+ADD_EXECUTABLE(lock_guards ${SOURCES}/lock_guards.cpp)
 
+ADD_EXECUTABLE(unique_lock ${SOURCES}/unique_lock.cpp)
 
-
-
-
+ADD_EXECUTABLE(conditional_vars ${SOURCES}/conditional_vars.cpp)
 
 
 
