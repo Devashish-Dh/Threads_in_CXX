@@ -207,6 +207,19 @@ trylocking_multiple_mutexes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trylocking_multiple_mutexes.dir/build.make CMakeFiles/trylocking_multiple_mutexes.dir/build
 .PHONY : trylocking_multiple_mutexes/fast
 
+#=============================================================================
+# Target rules for targets named timed_mutex_lock
+
+# Build rule for target.
+timed_mutex_lock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 timed_mutex_lock
+.PHONY : timed_mutex_lock
+
+# fast build rule for target.
+timed_mutex_lock/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/build
+.PHONY : timed_mutex_lock/fast
+
 src/join_detach_and_joinable.o: src/join_detach_and_joinable.cpp.o
 .PHONY : src/join_detach_and_joinable.o
 
@@ -303,6 +316,30 @@ src/single_thread_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_thread_demo.dir/build.make CMakeFiles/single_thread_demo.dir/src/single_thread_demo.cpp.s
 .PHONY : src/single_thread_demo.cpp.s
 
+src/timed_mutex_lock.o: src/timed_mutex_lock.cpp.o
+.PHONY : src/timed_mutex_lock.o
+
+# target to build an object file
+src/timed_mutex_lock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/src/timed_mutex_lock.cpp.o
+.PHONY : src/timed_mutex_lock.cpp.o
+
+src/timed_mutex_lock.i: src/timed_mutex_lock.cpp.i
+.PHONY : src/timed_mutex_lock.i
+
+# target to preprocess a source file
+src/timed_mutex_lock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/src/timed_mutex_lock.cpp.i
+.PHONY : src/timed_mutex_lock.cpp.i
+
+src/timed_mutex_lock.s: src/timed_mutex_lock.cpp.s
+.PHONY : src/timed_mutex_lock.s
+
+# target to generate assembly for a file
+src/timed_mutex_lock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/timed_mutex_lock.dir/build.make CMakeFiles/timed_mutex_lock.dir/src/timed_mutex_lock.cpp.s
+.PHONY : src/timed_mutex_lock.cpp.s
+
 src/trylocking_multiple_mutexes.o: src/trylocking_multiple_mutexes.cpp.o
 .PHONY : src/trylocking_multiple_mutexes.o
 
@@ -387,6 +424,7 @@ help:
 	@echo "... multiple_threads_demo"
 	@echo "... mutexes"
 	@echo "... single_thread_demo"
+	@echo "... timed_mutex_lock"
 	@echo "... trylocking_multiple_mutexes"
 	@echo "... trylockmutex"
 	@echo "... ways_to_create_threads"
@@ -402,6 +440,9 @@ help:
 	@echo "... src/single_thread_demo.o"
 	@echo "... src/single_thread_demo.i"
 	@echo "... src/single_thread_demo.s"
+	@echo "... src/timed_mutex_lock.o"
+	@echo "... src/timed_mutex_lock.i"
+	@echo "... src/timed_mutex_lock.s"
 	@echo "... src/trylocking_multiple_mutexes.o"
 	@echo "... src/trylocking_multiple_mutexes.i"
 	@echo "... src/trylocking_multiple_mutexes.s"
