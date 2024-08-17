@@ -39,6 +39,6 @@ ADD_EXECUTABLE(unique_lock ${SOURCES}/unique_lock.cpp)
 
 ADD_EXECUTABLE(conditional_vars ${SOURCES}/conditional_vars.cpp)
 
-
+ADD_EXECUTABLE(lock_multiple_mutexes ${SOURCES}/lock_multiple_mutexes.cpp)
 
 

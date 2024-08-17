@@ -50,4 +50,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/recursive_mutex.dir/DependInfo.cmake"
   "CMakeFiles/lock_guards.dir/DependInfo.cmake"
   "CMakeFiles/unique_lock.dir/DependInfo.cmake"
+  "CMakeFiles/conditional_vars.dir/DependInfo.cmake"
+  "CMakeFiles/lock_multiple_mutexes.dir/DependInfo.cmake"
   )

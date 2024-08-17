@@ -9,5 +9,7 @@
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/recursive_mutex.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/lock_guards.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/unique_lock.dir
+/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/conditional_vars.dir
+/home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/lock_multiple_mutexes.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/edit_cache.dir
 /home/ved/cxx_experiments/Threads_in_CXX/build/CMakeFiles/rebuild_cache.dir

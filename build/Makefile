@@ -259,6 +259,56 @@ unique_lock/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_lock.dir/build.make CMakeFiles/unique_lock.dir/build
 .PHONY : unique_lock/fast
 
+#=============================================================================
+# Target rules for targets named conditional_vars
+
+# Build rule for target.
+conditional_vars: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 conditional_vars
+.PHONY : conditional_vars
+
+# fast build rule for target.
+conditional_vars/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional_vars.dir/build.make CMakeFiles/conditional_vars.dir/build
+.PHONY : conditional_vars/fast
+
+#=============================================================================
+# Target rules for targets named lock_multiple_mutexes
+
+# Build rule for target.
+lock_multiple_mutexes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lock_multiple_mutexes
+.PHONY : lock_multiple_mutexes
+
+# fast build rule for target.
+lock_multiple_mutexes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_multiple_mutexes.dir/build.make CMakeFiles/lock_multiple_mutexes.dir/build
+.PHONY : lock_multiple_mutexes/fast
+
+src/conditional_vars.o: src/conditional_vars.cpp.o
+.PHONY : src/conditional_vars.o
+
+# target to build an object file
+src/conditional_vars.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional_vars.dir/build.make CMakeFiles/conditional_vars.dir/src/conditional_vars.cpp.o
+.PHONY : src/conditional_vars.cpp.o
+
+src/conditional_vars.i: src/conditional_vars.cpp.i
+.PHONY : src/conditional_vars.i
+
+# target to preprocess a source file
+src/conditional_vars.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional_vars.dir/build.make CMakeFiles/conditional_vars.dir/src/conditional_vars.cpp.i
+.PHONY : src/conditional_vars.cpp.i
+
+src/conditional_vars.s: src/conditional_vars.cpp.s
+.PHONY : src/conditional_vars.s
+
+# target to generate assembly for a file
+src/conditional_vars.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional_vars.dir/build.make CMakeFiles/conditional_vars.dir/src/conditional_vars.cpp.s
+.PHONY : src/conditional_vars.cpp.s
+
 src/join_detach_and_joinable.o: src/join_detach_and_joinable.cpp.o
 .PHONY : src/join_detach_and_joinable.o
 
@@ -306,6 +356,30 @@ src/lock_guards.s: src/lock_guards.cpp.s
 src/lock_guards.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_guards.dir/build.make CMakeFiles/lock_guards.dir/src/lock_guards.cpp.s
 .PHONY : src/lock_guards.cpp.s
+
+src/lock_multiple_mutexes.o: src/lock_multiple_mutexes.cpp.o
+.PHONY : src/lock_multiple_mutexes.o
+
+# target to build an object file
+src/lock_multiple_mutexes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_multiple_mutexes.dir/build.make CMakeFiles/lock_multiple_mutexes.dir/src/lock_multiple_mutexes.cpp.o
+.PHONY : src/lock_multiple_mutexes.cpp.o
+
+src/lock_multiple_mutexes.i: src/lock_multiple_mutexes.cpp.i
+.PHONY : src/lock_multiple_mutexes.i
+
+# target to preprocess a source file
+src/lock_multiple_mutexes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_multiple_mutexes.dir/build.make CMakeFiles/lock_multiple_mutexes.dir/src/lock_multiple_mutexes.cpp.i
+.PHONY : src/lock_multiple_mutexes.cpp.i
+
+src/lock_multiple_mutexes.s: src/lock_multiple_mutexes.cpp.s
+.PHONY : src/lock_multiple_mutexes.s
+
+# target to generate assembly for a file
+src/lock_multiple_mutexes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_multiple_mutexes.dir/build.make CMakeFiles/lock_multiple_mutexes.dir/src/lock_multiple_mutexes.cpp.s
+.PHONY : src/lock_multiple_mutexes.cpp.s
 
 src/multiple_threads_demo.o: src/multiple_threads_demo.cpp.o
 .PHONY : src/multiple_threads_demo.o
@@ -531,8 +605,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... conditional_vars"
 	@echo "... join_detach_and_joinable"
 	@echo "... lock_guards"
+	@echo "... lock_multiple_mutexes"
 	@echo "... multiple_threads_demo"
 	@echo "... mutexes"
 	@echo "... recursive_mutex"
@@ -542,12 +618,18 @@ help:
 	@echo "... trylockmutex"
 	@echo "... unique_lock"
 	@echo "... ways_to_create_threads"
+	@echo "... src/conditional_vars.o"
+	@echo "... src/conditional_vars.i"
+	@echo "... src/conditional_vars.s"
 	@echo "... src/join_detach_and_joinable.o"
 	@echo "... src/join_detach_and_joinable.i"
 	@echo "... src/join_detach_and_joinable.s"
 	@echo "... src/lock_guards.o"
 	@echo "... src/lock_guards.i"
 	@echo "... src/lock_guards.s"
+	@echo "... src/lock_multiple_mutexes.o"
+	@echo "... src/lock_multiple_mutexes.i"
+	@echo "... src/lock_multiple_mutexes.s"
 	@echo "... src/multiple_threads_demo.o"
 	@echo "... src/multiple_threads_demo.i"
 	@echo "... src/multiple_threads_demo.s"
