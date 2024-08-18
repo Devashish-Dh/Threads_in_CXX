@@ -52,4 +52,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/unique_lock.dir/DependInfo.cmake"
   "CMakeFiles/conditional_vars.dir/DependInfo.cmake"
   "CMakeFiles/lock_multiple_mutexes.dir/DependInfo.cmake"
+  "CMakeFiles/future_and_promise.dir/DependInfo.cmake"
+  "CMakeFiles/async.dir/DependInfo.cmake"
   )

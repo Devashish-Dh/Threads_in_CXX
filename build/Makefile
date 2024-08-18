@@ -285,6 +285,56 @@ lock_multiple_mutexes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lock_multiple_mutexes.dir/build.make CMakeFiles/lock_multiple_mutexes.dir/build
 .PHONY : lock_multiple_mutexes/fast
 
+#=============================================================================
+# Target rules for targets named future_and_promise
+
+# Build rule for target.
+future_and_promise: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 future_and_promise
+.PHONY : future_and_promise
+
+# fast build rule for target.
+future_and_promise/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future_and_promise.dir/build.make CMakeFiles/future_and_promise.dir/build
+.PHONY : future_and_promise/fast
+
+#=============================================================================
+# Target rules for targets named async
+
+# Build rule for target.
+async: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 async
+.PHONY : async
+
+# fast build rule for target.
+async/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async.dir/build.make CMakeFiles/async.dir/build
+.PHONY : async/fast
+
+src/async.o: src/async.cpp.o
+.PHONY : src/async.o
+
+# target to build an object file
+src/async.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async.dir/build.make CMakeFiles/async.dir/src/async.cpp.o
+.PHONY : src/async.cpp.o
+
+src/async.i: src/async.cpp.i
+.PHONY : src/async.i
+
+# target to preprocess a source file
+src/async.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async.dir/build.make CMakeFiles/async.dir/src/async.cpp.i
+.PHONY : src/async.cpp.i
+
+src/async.s: src/async.cpp.s
+.PHONY : src/async.s
+
+# target to generate assembly for a file
+src/async.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/async.dir/build.make CMakeFiles/async.dir/src/async.cpp.s
+.PHONY : src/async.cpp.s
+
 src/conditional_vars.o: src/conditional_vars.cpp.o
 .PHONY : src/conditional_vars.o
 
@@ -308,6 +358,30 @@ src/conditional_vars.s: src/conditional_vars.cpp.s
 src/conditional_vars.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional_vars.dir/build.make CMakeFiles/conditional_vars.dir/src/conditional_vars.cpp.s
 .PHONY : src/conditional_vars.cpp.s
+
+src/future_and_promise.o: src/future_and_promise.cpp.o
+.PHONY : src/future_and_promise.o
+
+# target to build an object file
+src/future_and_promise.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future_and_promise.dir/build.make CMakeFiles/future_and_promise.dir/src/future_and_promise.cpp.o
+.PHONY : src/future_and_promise.cpp.o
+
+src/future_and_promise.i: src/future_and_promise.cpp.i
+.PHONY : src/future_and_promise.i
+
+# target to preprocess a source file
+src/future_and_promise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future_and_promise.dir/build.make CMakeFiles/future_and_promise.dir/src/future_and_promise.cpp.i
+.PHONY : src/future_and_promise.cpp.i
+
+src/future_and_promise.s: src/future_and_promise.cpp.s
+.PHONY : src/future_and_promise.s
+
+# target to generate assembly for a file
+src/future_and_promise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future_and_promise.dir/build.make CMakeFiles/future_and_promise.dir/src/future_and_promise.cpp.s
+.PHONY : src/future_and_promise.cpp.s
 
 src/join_detach_and_joinable.o: src/join_detach_and_joinable.cpp.o
 .PHONY : src/join_detach_and_joinable.o
@@ -605,7 +679,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... async"
 	@echo "... conditional_vars"
+	@echo "... future_and_promise"
 	@echo "... join_detach_and_joinable"
 	@echo "... lock_guards"
 	@echo "... lock_multiple_mutexes"
@@ -618,9 +694,15 @@ help:
 	@echo "... trylockmutex"
 	@echo "... unique_lock"
 	@echo "... ways_to_create_threads"
+	@echo "... src/async.o"
+	@echo "... src/async.i"
+	@echo "... src/async.s"
 	@echo "... src/conditional_vars.o"
 	@echo "... src/conditional_vars.i"
 	@echo "... src/conditional_vars.s"
+	@echo "... src/future_and_promise.o"
+	@echo "... src/future_and_promise.i"
+	@echo "... src/future_and_promise.s"
 	@echo "... src/join_detach_and_joinable.o"
 	@echo "... src/join_detach_and_joinable.i"
 	@echo "... src/join_detach_and_joinable.s"

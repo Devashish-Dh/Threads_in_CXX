@@ -41,4 +41,27 @@ ADD_EXECUTABLE(conditional_vars ${SOURCES}/conditional_vars.cpp)
 
 ADD_EXECUTABLE(lock_multiple_mutexes ${SOURCES}/lock_multiple_mutexes.cpp)
 
+ADD_EXECUTABLE(future_and_promise ${SOURCES}/future_and_promise.cpp)
+
+ADD_EXECUTABLE(async ${SOURCES}/async.cpp)
+
+ADD_EXECUTABLE(async ${SOURCES}/async.cpp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
