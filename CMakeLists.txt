@@ -45,7 +45,6 @@ ADD_EXECUTABLE(future_and_promise ${SOURCES}/future_and_promise.cpp)
 
 ADD_EXECUTABLE(async ${SOURCES}/async.cpp)
 
-ADD_EXECUTABLE(async ${SOURCES}/async.cpp)
 
 
 
